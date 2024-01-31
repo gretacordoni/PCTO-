@@ -32,7 +32,7 @@ void stampaMoltiplicazione()
     scanf(" %d",&x);
     printf("inserisci il numero 2: ");
     scanf(" %d",&y);
-    sol=x+y;
+    sol=x*y;
     printf("il prodotto di %d * %d è uguale a %d \n",x,y,sol);
 }
 void stampaDivisione()
@@ -50,23 +50,24 @@ void stampaDivisione()
 
 int main()
 {
-    int f;
-    printf("seleziona il numero dell'operazione che vuoi eseguire: \n 1=addizione, 2=sottrazione, 3=moltiplicazione, 4=divisione.\n ...");
+    int f, x, y, sol;
+    printf("seleziona il numero dell'operazione che vuoi eseguire:\n1=addizione, \n2=sottrazione, \n3=moltiplicazione, \n4=divisione.\n ...");
     scanf(" %d",&f);
-    if (x=1)
+    if(f==1)
     {
-    stampaAddizione
+    stampaAddizione();
     }
-    if else(x=2)
+    if(f==2)
     {
-        /* code */
+    stampaSottrazione();
     }
-    
-    y=y*x;
-    x=x-1;
-
-   printf("%d\n",result);
-
-   stampaCubo()
-   return(0)
+     if(f==3)
+    {
+    stampaMoltiplicazione();
+    }
+     if(f==4)
+    {
+    stampaDivisione();
+    }
+   return(0);
 }

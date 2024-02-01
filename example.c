@@ -1,5 +1,5 @@
 #include <stdio.h>
-void stampaCubo()
+void stampaMassimo()
 {
     int numero;
     int cubo;
